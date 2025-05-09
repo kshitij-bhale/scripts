@@ -35,4 +35,4 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 breakfast hawao userdebug
 echo "======== Lunched ========"
-mka bacon"
+mka bacon
