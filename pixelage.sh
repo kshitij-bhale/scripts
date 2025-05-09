@@ -4,10 +4,15 @@ rm -rf .repo/local_manifests
 
 # ROM repo
 repo init -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b pixelage-15 .repo/local_manifests
 echo "=================="
 echo "Repo init success"
 echo "=================="
+
+# Local Repository
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b pixelage-15 .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
 
 # Re-sync
 /opt/crave/resync.sh
