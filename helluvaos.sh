@@ -1,6 +1,8 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf hardware/qcom-caf/common
+rm -rf device/qcom/sepolicy_vndr
 
 # ROM repo
 repo init -u https://github.com/hentaiOS/platform_manifest -b Vallhound --git-lfs
@@ -13,6 +15,12 @@ git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b helluvao
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
+
+# Add qcom-caf
+git clone https://github.com/kshitij-bhale/android_hardware_qcom-caf_common hardware/qcom-caf/common
+
+#Added sepolicy
+git clone --depth=1 https://github.com/hentaiOS/platform_device_qcom_sepolicy_vndr
 
 # Re-sync
 /opt/crave/resync.sh
