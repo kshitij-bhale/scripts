@@ -1,17 +1,38 @@
 #!/bin/bash
 
-rm -rf .repo/local_manifests; \
+rm -rf .repo/local_manifests
+
+# Remove kernel/motorola/sm6225
+rm -rf kernel/motorola/sm6225
+
+# Remove hardware/motorola
+rm -rf hardware/motorola
 
 # ROM source repo
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs; \
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+echo "=================="
+echo "Repo init success"
+echo "=================="
 
 # Local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b crdroid11 .repo/local_manifests; \ 
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b crdroid-11 .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
+# Add KSU next
+cd kernel/motorola/sm6225
+echo "======== Inside kernel/motorola/sm6225 ========"
+curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+echo "======== Added KSU successfully ========"
 
 # Re-sync
-/opt/crave/resync.sh; \
+/opt/crave/resync.sh
+echo "======== Synced Successfully ========"
 
 # Building ROM
-source build/envsetup.sh; \
-breakfast hawao userdebug; \ 
+source build/envsetup.sh
+echo "======== Environment setup done ========"
+breakfast hawao userdebug
+echo "======== Lunched ========"
 mka bacon"
