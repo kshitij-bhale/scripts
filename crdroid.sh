@@ -20,15 +20,15 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
+# Re-sync
+/opt/crave/resync.sh
+echo "======== Synced Successfully ========"
+
 # Add KSU next
 cd kernel/motorola/sm6225
 echo "======== Inside kernel/motorola/sm6225 ========"
 curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
 echo "======== Added KSU successfully ========"
-
-# Re-sync
-/opt/crave/resync.sh
-echo "======== Synced Successfully ========"
 
 # Building ROM
 source build/envsetup.sh
