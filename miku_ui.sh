@@ -23,9 +23,8 @@ cd kernel/motorola/sm6225
 echo "======== Inside kernel/motorola/sm6225 ========"
 curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
 echo "======== Added KSU successfully ========"
-cp arch/arm64/configs/vendor/ext_config/hawao-default.config .config
-make olddefconfig
-echo "======== Made .config ========"
+cd ../../..
+echo "======== changed directory ========"
 
 # Building ROM
 source build/envsetup.sh
