@@ -20,7 +20,7 @@ echo "============================"
 git clone https://github.com/kshitij-bhale/android_hardware_qcom-caf_common hardware/qcom-caf/common
 
 #Added sepolicy
-git clone --depth=1 https://github.com/hentaiOS/platform_device_qcom_sepolicy_vndr
+git clone --depth=1 https://github.com/hentaiOS/platform_device_qcom_sepolicy_vndr device/qcom/sepolicy_vndr
 
 # Re-sync
 /opt/crave/resync.sh
