@@ -1,6 +1,10 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
+rm -rf device/motorola/hawao
+rm -rf device/motorola/devon
+rm -rf device/motorola/rhode
+rm -rf device/motorola/sm6225-common
 
 # ROM source repo
 repo init -u https://github.com/Miku-UI/manifesto -b Vampire_v3 --git-lfs
