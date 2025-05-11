@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
+rm -rf .repo/
 rm -rf device/motorola/hawao
 rm -rf device/motorola/devon
 rm -rf device/motorola/rhode
