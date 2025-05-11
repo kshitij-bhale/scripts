@@ -2,12 +2,6 @@
 
 rm -rf .repo/local_manifests
 
-# Remove kernel/motorola/sm6225
-rm -rf kernel/motorola/sm6225
-
-# Remove hardware/motorola
-rm -rf hardware/motorola
-
 # ROM source repo
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 echo "=================="
