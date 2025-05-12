@@ -1,36 +1,43 @@
 #!/bin/bash
 
+# Clean old manifests
 rm -rf .repo/local_manifests
 
-# ROM source repo
+# Initialize AxionAOSP source
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Local manifest
+# Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b axion .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Re-sync
+# Use Crave's sync method
 /opt/crave/resync.sh
 echo "======== Synced Successfully ========"
 
-# Add KSU next
+# KernelSU Next setup
 cd kernel/motorola/sm6225
 echo "======== Inside kernel/motorola/sm6225 ========"
 curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
 echo "======== Added KSU successfully ========"
 cd ../../..
-echo "======== changed directory ========"
+echo "======== Returned to root directory ========"
 
-# Building 
+# Environment setup
 source build/envsetup.sh
 echo "======== Environment setup done ========"
+
+# Generate private signing keys
 gk -s
 echo "======== Private key generated ========"
-axion hawao gms mini
-echo "======== Lunched ========"
+
+# Device + GApps variant lunch
+axion hawao gms pico
+echo "======== Lunch command done ========"
+
+# Start the build with full CPU usage
 ax -br
