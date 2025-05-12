@@ -36,7 +36,7 @@ gk -s
 echo "======== Private key generated ========"
 
 # Device + GApps variant lunch
-axion hawao userdebug gms pico
+lunch lineage_hawao-bp1a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
