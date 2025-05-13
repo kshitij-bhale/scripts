@@ -36,7 +36,7 @@ gk -s
 echo "======== Private key generated ========"
 
 # Device + GApps variant lunch
-lunch lineage_devon-bp1a-userdebug
+lunch lineage_rhode-bp1a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
