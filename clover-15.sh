@@ -31,10 +31,6 @@ echo "======== Returned to root directory ========"
 source build/envsetup.sh
 echo "======== Environment setup done ========"
 
-# Generate private signing keys
-gk -s
-echo "======== Private key generated ========"
-
 # Device + GApps variant lunch
 lunch clover_hawao-bp1a-userdebug
 echo "======== Lunch command done ========"
