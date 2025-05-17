@@ -5,6 +5,8 @@ rm -rf device/motorola/hawao
 rm -rf device/motorola/devon
 rm -rf device/motorola/rhode
 rm -rf device/motorola/sm6225-common
+rm -rf hardware/motorola
+echo "==========Clean up done=========="
 
 # ROM source repo
 repo init -u https://github.com/Miku-UI/manifesto -b Vampire_v3 --git-lfs
