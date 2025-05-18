@@ -19,6 +19,10 @@ echo "============================"
 /opt/crave/resync.sh
 echo "======== Synced Successfully ========"
 
+# qcom-caf thing
+rm -rf hardware/qcmo-caf/common
+git clone https://github.com/LineageOS/android_hardware_qcom-caf_common --depth=1 hardware/qcom-caf/common
+
 # Add KSU next
 cd kernel/motorola/sm6225
 echo "======== Inside kernel/motorola/sm6225 ========"
