@@ -22,6 +22,7 @@ echo "======== Synced Successfully ========"
 # qcom-caf thing
 rm -rf hardware/qcom-caf/common
 git clone https://github.com/LineageOS/android_hardware_qcom-caf_common --depth=1 hardware/qcom-caf/common
+echo "========= qcom-caf thing done ========="
 
 # Add KSU next
 cd kernel/motorola/sm6225
