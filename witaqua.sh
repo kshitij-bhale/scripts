@@ -3,7 +3,7 @@
 # Clean old manifests
 rm -rf .repo/local_manifests
 
-# Initialize AxionAOSP source
+# Initialize WitAqua source
 repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
 echo "=================="
 echo "Repo init success"
