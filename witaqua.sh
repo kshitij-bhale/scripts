@@ -32,7 +32,7 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 # Device + GApps variant lunch
-lunch lineage_hawao-bp1a-userdebug
+lunch lineage_rhode-bp1a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
