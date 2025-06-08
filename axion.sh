@@ -4,7 +4,7 @@
 rm -rf .repo/local_manifests
 
 # Initialize AxionAOSP source
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-22.2 --git-lfs
+repo init -u https://github.com/kshitij-bhale/android.git -b lineage-22.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
