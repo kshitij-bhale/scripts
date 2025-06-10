@@ -41,4 +41,3 @@ echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
 ax -b
-mka emu_img_zip
