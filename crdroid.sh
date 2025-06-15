@@ -12,5 +12,5 @@ echo "======== Synced Successfully ========"
 
 # Building ROM
 source build/envsetup.sh
-lunch sdk_phone_x86_64-userdebug
+breakfast sdk_phone_x86_64 userdebug
 mka emu_img_zip
