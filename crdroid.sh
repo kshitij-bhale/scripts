@@ -10,7 +10,8 @@ echo "=================="
 /opt/crave/resync.sh
 echo "======== Synced Successfully ========"
 
-# Building ROM
+# Build ROM
+export TARGET_RELEASE=15.0
 source build/envsetup.sh
 breakfast sdk_phone_x86_64 userdebug
 mka emu_img_zip
