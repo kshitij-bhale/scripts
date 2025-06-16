@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Clone local manifest 
+repo init -u https://github.com/kshitij-bhale/android_device_generic_common --depth 1 -b lineage-22.2 device/generic/common
+
 # ROM source repo
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
 echo "=================="
