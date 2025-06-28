@@ -34,7 +34,7 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 # lunch
-lunch lineage_devon-bp2a-userdebug
+lunch lineage_rhode-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build
