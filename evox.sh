@@ -3,7 +3,6 @@
 # Clean old manifests
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
-rm -rf hardware/qcom/audio
 
 # Initialize EvoX source
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
@@ -13,8 +12,6 @@ echo "=================="
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b evo-16 .repo/local_manifests
-rm -rf hardware/qcom/audio
-git clone https://github.com/ZetLink/android_hardware_qcom_audio --depth=1 -b lineage-22.2-caf-sm8250 hardware/qcom/audio
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
