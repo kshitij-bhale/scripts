@@ -3,6 +3,7 @@
 # Clean old manifests
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
+rm-rf hardware/qcom/audio
 rm -rf hardware/qcom-caf/sm8250/audio/
 
 # Initialize EvoX source
