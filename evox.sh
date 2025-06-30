@@ -6,6 +6,7 @@ rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize EvoX source
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
+rm -rf hardware/qcom-caf/sm8250/audio
 echo "=================="
 echo "Repo init success"
 echo "=================="
