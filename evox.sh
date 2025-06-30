@@ -3,16 +3,17 @@
 # Clean old manifests
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf hardware/qcom-caf/sm8250/audio/adsprpcd
 
 # Initialize EvoX source
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
-rm -rf hardware/qcom-caf/sm8250/audio
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b evo-16 .repo/local_manifests
+rm -rf hardware/qcom-caf/sm8250/audio/adsprpcd
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
