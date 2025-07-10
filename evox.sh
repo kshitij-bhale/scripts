@@ -2,8 +2,8 @@
 
 # Clean old manifests
 rm -rf .repo/local_manifests
-rm -rf prebuilts/clang/host/linux-x86
-rm -rf hardware/qcom/audio
+# rm -rf prebuilts/clang/host/linux-x86
+# rm -rf hardware/qcom/audio
 
 # Initialize EvoX source
 repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs
