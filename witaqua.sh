@@ -2,7 +2,7 @@
 
 # Clean old manifests
 rm -rf .repo/local_manifests
-rm -rf kernel/motorola/sm6225
+rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize WitAqua source
 repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
@@ -12,6 +12,8 @@ echo "Repo init success"
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b witaqua-15 .repo/local_manifests
+rm -rf hardware/qcom/audio
+git clone https://github.com/ZetLink/android_hardware_qcom_audio --depth 1 -b lineage-22.1-caf-sm8250 hardware/qcom/audio
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -33,7 +35,7 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 # lunch
-lunch lineage_hawao-bp1a-userdebug
+lunch lineage_rhode-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build
