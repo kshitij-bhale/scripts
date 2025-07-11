@@ -11,7 +11,7 @@ echo "Repo init success"
 #echo "=================="
 
 # Clone local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b witaqua-15 .repo/local_manifests
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b witaqua-16 .repo/local_manifests
 rm -rf hardware/qcom/audio
 git clone https://github.com/ZetLink/android_hardware_qcom_audio --depth 1 -b lineage-22.1-caf-sm8250 hardware/qcom/audio
 echo "============================"
