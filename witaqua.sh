@@ -5,7 +5,7 @@ rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize WitAqua source
-repo init -u https://github.com/WitAqua/manifest.git -b 15.2 --git-lfs
+repo init -u https://github.com/WitAqua/manifest.git -b 16.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 #echo "=================="
