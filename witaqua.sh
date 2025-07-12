@@ -12,7 +12,7 @@ echo "Repo init success"
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b witaqua-16 .repo/local_manifests
-# rm -rf hardware/qcom/audio
+rm -rf hardware/qcom/audio
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
