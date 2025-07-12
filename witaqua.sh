@@ -8,7 +8,7 @@ rm -rf prebuilts/clang/host/linux-x86
 repo init -u https://github.com/WitAqua/manifest.git -b 16.0 --git-lfs
 echo "=================="
 echo "Repo init success"
-#echo "=================="
+echo "=================="
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b witaqua-16 .repo/local_manifests
@@ -43,7 +43,7 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 # lunch
-lunch lineage_rhode-bp2a-userdebug
+lunch lineage_devon-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build
