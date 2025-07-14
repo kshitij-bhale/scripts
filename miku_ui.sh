@@ -4,7 +4,7 @@ rm -rf .repo/local_manifests
 echo "==========Clean up done=========="
 
 # ROM source repo
-repo init -u https://github.com/Miku-UI/manifesto -b Vampire_v3 --git-lfs
+repo init -u https://github.com/Miku-UI/manifesto -b Blooming --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
