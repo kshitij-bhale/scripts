@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Clean old manifests
-# rm -rf .repo/local_manifests
+rm -rf .repo/local_manifests
+rm -rf device/motorola/hawao
 # rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize EvoX source
@@ -11,11 +12,11 @@
 # echo "=================="
 
 # # Clone local manifest
-# git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b evo-16 .repo/local_manifests
+git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b evo-16 .repo/local_manifests
 # rm -rf hardware/qcom/audio
-# echo "============================"
-# echo "Local manifest clone success"
-# echo "============================"
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
 
 # MotoCam
 git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera4-bengal.git -b android-15 vendor/motorola/MotCamera4-bengal
