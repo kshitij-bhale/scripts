@@ -10,7 +10,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b miku_ui .repo/local_manifests
+git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b miku_ui .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -18,11 +18,6 @@ echo "============================"
 # Re-sync
 /opt/crave/resync.sh
 echo "======== Synced Successfully ========"
-
-# qcom-caf thing
-rm -rf hardware/qcom-caf/common
-git clone https://github.com/LineageOS/android_hardware_qcom-caf_common --depth=1 hardware/qcom-caf/common
-echo "========= qcom-caf thing done ========="
 
 # Add KSU next
 cd kernel/motorola/sm6225
@@ -35,6 +30,6 @@ echo "======== changed directory ========"
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
-lunch miku_hawao-bp1a-userdebug
+lunch miku_hawao-bp2a-userdebug
 echo "======== Lunched ========"
 make diva
