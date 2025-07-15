@@ -2,7 +2,6 @@
 
 # Clean old manifests
 rm -rf .repo/local_manifests
-rm -rf device/motorola/hawao
 rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize EvoX source
