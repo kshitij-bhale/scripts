@@ -31,6 +31,6 @@ echo "======== changed directory ========"
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
-lunch miku_hawao-bp2a-userdebug
+lunch miku_rhode-bp2a-userdebug
 echo "======== Lunched ========"
 make diva
