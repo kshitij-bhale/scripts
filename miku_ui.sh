@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
-# rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 echo "==========Clean up done=========="
 
 # ROM source repo
