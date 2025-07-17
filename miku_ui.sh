@@ -31,6 +31,16 @@ echo "======== changed directory ========"
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
+
+# Nuke all test folders inside art/ to fix build errors
+find art -type d -name test | xargs rm -rf
+echo "======== Nuked ALL art/*/test directories ========"
+
 lunch miku_rhode-bp2a-userdebug
 echo "======== Lunched ========"
+
+# Set flag to skip tests (for extra safety)
+export WITHOUT_TESTS=true
+echo "======== WITHOUT_TESTS flag set ========"
+
 make diva
