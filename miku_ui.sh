@@ -28,11 +28,15 @@ echo "======== Added KSU successfully ========"
 cd ../../..
 echo "======== changed directory ========"
 
+rm -rf out
+
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 lunch miku_rhode-bp2a-userdebug
 echo "======== Lunched ========"
+
+rm -rf build/soong/fsgen
 
 make diva
