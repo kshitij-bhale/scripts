@@ -1,0 +1,35 @@
+#!/bin/bash
+
+rm -rf .repo/local_manifests
+rm -rf prebuilts/clang/host/linux-x86
+
+# ROM source repo
+repo init -u https://github.com/blumengarten/manifest -b 16.0 --git-lfs
+echo "=================="
+echo "Repo init success"
+echo "=================="
+
+# Local manifest
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b halcyon-16 .repo/local_manifests
+echo "============================"
+echo "Local manifest clone success"
+echo "============================"
+
+# Re-sync
+/opt/crave/resync.sh
+echo "======== Synced Successfully ========"
+
+# Add KSU next
+cd kernel/motorola/sm6225
+echo "======== Inside kernel/motorola/sm6225 ========"
+curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+echo "======== Added KSU successfully ========"
+cd ../../..
+echo "======== changed directory ========"
+
+# Building ROM
+source build/envsetup.sh
+echo "======== Environment setup done ========"
+lunch halcyon_rhode-bp2a-userdebug
+echo "======== Lunched ========"
+mka carthage
