@@ -2,15 +2,6 @@
 
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
-rm -rf device/motorola/rhode
-rm -rf device/motorola/hawao
-rm -rf device/motorola/devon
-rm -rf vendor/motorola/MotCamera4-bengal
-rm -rf vendor/motorola/MotCamera-common
-rm -rf vendor/motorola/MotoPhotoEditor
-rm -rf vendor/motorola/MotCamera3AI-bengal
-rm -rf vendor/motorola/MotoSignatureApp
-rm -rf vendor/motorola/MotorolaSettingsProvider
 
 # ROM source repo
 repo init -u https://github.com/blumengarten/manifest -b 16.0 --git-lfs
