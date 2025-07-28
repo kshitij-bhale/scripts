@@ -2,6 +2,12 @@
 
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf vendor/motorola/MotCamera4-bengal
+rm -rf vendor/motorola/MotCamera-common
+rm -rf vendor/motorola/MotoPhotoEditor
+rm -rf vendor/motorola/MotCamera3AI-bengal
+rm -rf vendor/motorola/MotoSignatureApp
+rm -rf vendor/motorola/MotorolaSettingsProvider
 
 # ROM source repo
 repo init -u https://github.com/blumengarten/manifest -b 16.0 --git-lfs
@@ -20,13 +26,13 @@ echo "============================"
 echo "======== Synced Successfully ========"
 
 # MotoCam
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera4-bengal.git -b android-15 vendor/motorola/MotCamera4-bengal
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera-common.git -b android-15 vendor/motorola/MotCamera-common
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotoPhotoEditor.git -b android-15 vendor/motorola/MotoPhotoEditor
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera3AI-bengal.git -b android-15 vendor/motorola/MotCamera3AI-bengal
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCameraAI-common.git -b android-15 vendor/motorola/MotCameraAI-common
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotoSignatureApp.git -b android-15 vendor/motorola/MotoSignatureApp
-git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotorolaSettingsProvider.git -b android-15 vendor/motorola/MotorolaSettingsProvider
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera4-bengal.git -b android-15 vendor/motorola/MotCamera4-bengal
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera-common.git -b android-15 vendor/motorola/MotCamera-common
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotoPhotoEditor.git -b android-15 vendor/motorola/MotoPhotoEditor
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera3AI-bengal.git -b android-15 vendor/motorola/MotCamera3AI-bengal
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCameraAI-common.git -b android-15 vendor/motorola/MotCameraAI-common
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotoSignatureApp.git -b android-15 vendor/motorola/MotoSignatureApp
+# git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotorolaSettingsProvider.git -b android-15 vendor/motorola/MotorolaSettingsProvider
 
 # Add KSU next
 cd kernel/motorola/sm6225
