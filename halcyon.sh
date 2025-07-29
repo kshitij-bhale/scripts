@@ -2,7 +2,6 @@
 
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
-rm -rf device/motorola/sm6225-common
 
 # ROM source repo
 repo init -u https://github.com/blumengarten/manifest -b 16.0 --git-lfs
