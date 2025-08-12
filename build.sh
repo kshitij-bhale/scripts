@@ -2,6 +2,8 @@
 
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf device/motorola/rhode
+rm -rf device/motorola/hawao
 
 # ROM source repo
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
