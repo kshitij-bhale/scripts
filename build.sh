@@ -30,6 +30,6 @@
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
-breakfast devon userdebug
+breakfast hawao userdebug
 echo "======== Lunched ========"
 mka bacon
