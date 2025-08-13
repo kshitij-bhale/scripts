@@ -1,37 +1,35 @@
 #!/bin/bash
 
-rm -rf .repo/local_manifests
-rm -rf prebuilts/clang/host/linux-x86
-rm -rf device/motorola/rhode
-rm -rf device/motorola/hawao
+#rm -rf .repo/local_manifests
+#rm -rf prebuilts/clang/host/linux-x86
 
 # ROM source repo
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
-echo "=================="
-echo "Repo init success"
-echo "=================="
+#repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+#echo "=================="
+#echo "Repo init success"
+#echo "=================="
 
 # Local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b lineage-22.2 .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
+#git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b lineage-22.2 .repo/local_manifests
+#echo "============================"
+#echo "Local manifest clone success"
+#echo "============================"
 
 # Re-sync
-/opt/crave/resync.sh
-echo "======== Synced Successfully ========"
+#/opt/crave/resync.sh
+#echo "======== Synced Successfully ========"
 
 # Add KSU next
-cd kernel/motorola/sm6225
-echo "======== Inside kernel/motorola/sm6225 ========"
-curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
-echo "======== Added KSU successfully ========"
-cd ../../..
-echo "======== changed directory ========"
+#cd kernel/motorola/sm6225
+#echo "======== Inside kernel/motorola/sm6225 ========"
+#curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+#echo "======== Added KSU successfully ========"
+#cd ../../..
+#echo "======== changed directory ========"
 
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
-breakfast rhode userdebug
+breakfast devon userdebug
 echo "======== Lunched ========"
 mka bacon
