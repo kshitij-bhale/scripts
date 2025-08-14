@@ -11,7 +11,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b crdroid-11 .repo/local_manifests
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b axion .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
