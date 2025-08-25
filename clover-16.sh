@@ -3,6 +3,11 @@
 # Clean up
 rm -rf .repo/local_manifests
 rm -rf prebuilts/clang/host/linux-x86
+rm -rf device/motorola/devon
+rm -rf device/motorola/hawao
+rm -rf device/motorola/rhode
+rm -rf device/motorola/sm6225-common
+rm -rf kernel/motorola/sm6225
 
 # Initialize Clover porject source
 repo init -u https://github.com/The-Clover-Project/manifest.git -b 16 --git-lfs
@@ -11,7 +16,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b clover-16 .repo/local_manifests
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b clover .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
