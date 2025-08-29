@@ -2,6 +2,7 @@
 
 # Clean old manifests
 rm -rf .repo/local_manifests
+rm -rf kernel/motorola/sm6225
 # rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize AxionAOSP source
