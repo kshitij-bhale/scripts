@@ -2,7 +2,7 @@
 
 # Clean old manifests
 #rm -rf .repo/local_manifests
-#rm -rf hardware/motorola
+rm -rf hardware/motorola
 # rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize AxionAOSP source
@@ -38,7 +38,7 @@ gk -s
 echo "======== Private key generated ========"
 
 # Device + GApps variant lunch
-lunch lineage_hawao-bp2a-userdebug
+lunch lineage_devon-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
