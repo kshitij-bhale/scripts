@@ -2,25 +2,25 @@
 
 # Clean old manifests
 #rm -rf .repo/local_manifests
-rm -rf hardware/motorola
-rm -rf packages/resources/devicesettings
+# rm -rf hardware/motorola
+# rm -rf packages/resources/devicesettings
 # rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize AxionAOSP source
-repo init -u https://github.com/kshitij-bhale/android.git -b lineage-23.0 --git-lfs
-echo "=================="
-echo "Repo init success"
-echo "=================="
+# repo init -u https://github.com/kshitij-bhale/android.git -b lineage-23.0 --git-lfs
+# echo "=================="
+# echo "Repo init success"
+# echo "=================="
 
 # Clone local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b test .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
+# git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b test .repo/local_manifests
+# echo "============================"
+# echo "Local manifest clone success"
+# echo "============================"
 
 # Use Crave's sync method
-/opt/crave/resync.sh
-echo "======== Synced Successfully ========"
+# /opt/crave/resync.sh
+# echo "======== Synced Successfully ========"
 
 # KernelSU Next setup
 # cd kernel/motorola/sm6225
@@ -39,7 +39,7 @@ gk -s
 echo "======== Private key generated ========"
 
 # Device + GApps variant lunch
-lunch lineage_devon-bp2a-userdebug
+lunch lineage_hawao-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
