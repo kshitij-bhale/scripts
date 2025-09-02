@@ -2,7 +2,7 @@
 
 # Clean old manifests
 #rm -rf .repo/local_manifests
-rm -rf hardware/motorola
+# rm -rf hardware/motorola
 # rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize AxionAOSP source
@@ -22,12 +22,12 @@ rm -rf hardware/motorola
 #echo "======== Synced Successfully ========"
 
 # KernelSU Next setup
-cd kernel/motorola/sm6225
-echo "======== Inside kernel/motorola/sm6225 ========"
-curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
-echo "======== Added KSU successfully ========"
-cd ../../..
-echo "======== Returned to root directory ========"
+# cd kernel/motorola/sm6225
+# echo "======== Inside kernel/motorola/sm6225 ========"
+# curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+# echo "======== Added KSU successfully ========"
+# cd ../../..
+# echo "======== Returned to root directory ========"
 
 # Environment setup
 source build/envsetup.sh
@@ -38,7 +38,7 @@ gk -s
 echo "======== Private key generated ========"
 
 # Device + GApps variant lunch
-lunch lineage_devon-bp2a-userdebug
+lunch lineage_hawao-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
