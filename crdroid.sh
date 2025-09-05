@@ -30,5 +30,5 @@ echo "======== changed directory ========"
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
-brunch hawao
+brunch devon
 echo "======== Brunched ========"
