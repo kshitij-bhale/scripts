@@ -3,10 +3,11 @@
 # Clean old manifests
 rm -rf .repo/local_manifests
 rm -rf hardware/motorola
-rm -rf prebuilts/clang/host/linux-x86
+rm -rf packages/resources/devicesettings
+# rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
-repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
+repo init -u https://github.com/kshitij-bhale/android.git -b lineage-23.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
