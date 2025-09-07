@@ -3,16 +3,13 @@
 # Clean old manifests
 rm -rf .repo/local_manifests
 rm -rf hardware/motorola
-rm -rf device/motorola/sm6225-common
-rm -rf device/motorola/devon
-# rm -rf packages/resources/devicesettings
-# rm -rf prebuilts/clang/host/linux-x86
+rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
-# repo init -u https://github.com/kshitij-bhale/android.git -b lineage-23.0 --git-lfs
-# echo "=================="
-# echo "Repo init success"
-# echo "=================="
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
+echo "=================="
+echo "Repo init success"
+echo "=================="
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b test .repo/local_manifests
@@ -25,12 +22,12 @@ echo "============================"
 echo "======== Synced Successfully ========"
 
 # KernelSU Next setup
-cd kernel/motorola/sm6225
-echo "======== Inside kernel/motorola/sm6225 ========"
-curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
-echo "======== Added KSU successfully ========"
-cd ../../..
-echo "======== Returned to root directory ========"
+# cd kernel/motorola/sm6225
+# echo "======== Inside kernel/motorola/sm6225 ========"
+# curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+# echo "======== Added KSU successfully ========"
+# cd ../../..
+# echo "======== Returned to root directory ========"
 
 # Environment setup
 source build/envsetup.sh
