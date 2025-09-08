@@ -1,16 +1,17 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
+rm -rf packages/resources/devicesettings
 rm -rf prebuilts/clang/host/linux-x86
 
 # ROM source repo
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/kshitij-bhale/android.git -b lineage-22.2 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b lineage-22.2 .repo/local_manifests
+git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b test .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
