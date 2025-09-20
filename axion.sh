@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clean old manifests
-#rm -rf .repo/local_manifests
+rm -rf .repo/local_manifests
 rm -rf device/motorola/devon
 #rm -rf prebuilts/clang/host/linux-x86
 
