@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Clean old manifests
-rm -rf .repo/local_manifests
-rm -rf device/motorola/devon
-rm -rf device/motorola/hawao
-rm -rf device/motorola/rhode
-rm -rf vendor/motorola/devon
-rm -rf vendor/motorola/hawao
-rm -rf vendor/motorola/rhode
-rm -rf hardware/motorola
-echo "============Clean-up=============="
+# rm -rf .repo/local_manifests
+# rm -rf device/motorola/devon
+# rm -rf device/motorola/hawao
+# rm -rf device/motorola/rhode
+# rm -rf vendor/motorola/devon
+# rm -rf vendor/motorola/hawao
+# rm -rf vendor/motorola/rhode
+# rm -rf hardware/motorola
 #rm -rf prebuilts/clang/host/linux-x86
+# echo "============Clean-up=============="
 
 # # Initialize AxionAOSP source
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
