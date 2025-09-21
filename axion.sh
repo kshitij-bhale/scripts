@@ -13,10 +13,10 @@ echo "============Clean-up=============="
 #rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
-# repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
-# echo "=================="
-# echo "Repo init success"
-# echo "=================="
+repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
+echo "=================="
+echo "Repo init success"
+echo "=================="
 
 # Clone local manifest
 git clone https://github.com/kshitij-bhale/local_manifests --depth 1 -b axion .repo/local_manifests
