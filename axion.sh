@@ -9,6 +9,7 @@ rm -rf vendor/motorola/devon
 rm -rf vendor/motorola/hawao
 rm -rf vendor/motorola/rhode
 rm -rf hardware/motorola
+echo "============Clean-up=============="
 #rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
