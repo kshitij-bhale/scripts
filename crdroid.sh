@@ -30,5 +30,5 @@
 # Building ROM
 source build/envsetup.sh
 echo "======== Environment setup done ========"
-brunch rhode
+brunch hawao
 echo "======== Brunched ========"
