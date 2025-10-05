@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Clean up
-rm -rf .repo/local_manifests
-rm -rf device/motorola/hawao
+# rm -rf .repo/local_manifests
+# rm -rf device/motorola/hawao
 # rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize Clover porject source
@@ -12,14 +12,14 @@ rm -rf device/motorola/hawao
 # echo "=================="
 
 # Clone local manifest
-git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b clover .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
+# git clone https://github.com/kshitij-bhale/local_manifests --depth=1 -b clover .repo/local_manifests
+# echo "============================"
+# echo "Local manifest clone success"
+# echo "============================"
 
 # Use Crave's sync method
-/opt/crave/resync.sh
-echo "======== Synced Successfully ========"
+# /opt/crave/resync.sh
+# echo "======== Synced Successfully ========"
 
 # KernelSU Next setup
 # cd kernel/motorola/sm6225
@@ -34,7 +34,7 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 # Lunch
-lunch clover_hawao-bp2a-userdebug
+lunch clover_devon-bp2a-eng
 echo "======== Lunch command done ========"
 
 # Start the build
