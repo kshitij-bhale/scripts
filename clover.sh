@@ -2,6 +2,9 @@
 
 # Clean up
 rm -rf .repo/local_manifests
+rm -rf packages/apps/Settings
+rm -rf .repo/projects/art.git
+rm -rf vendor/clover
 rm -rf prebuilts/clang/host/linux-x86
 
 # Initialize Clover porject source
