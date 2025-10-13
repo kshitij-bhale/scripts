@@ -2,8 +2,7 @@
 
 # Clean old manifests
 rm -rf .repo/local_manifests
-# rm -rf prebuilts/clang/host/linux-x86
-rm -rf device/motorola/hawao
+rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
 repo init -u https://github.com/AxionAOSP/android.git -b lineage-23.0 --git-lfs
@@ -38,7 +37,7 @@ gk -s
 echo "======== Private key generated ========"
 
 # Device + GApps variant lunch
-lunch lineage_hawao-bp2a-userdebug
+lunch lineage_devon-bp2a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
