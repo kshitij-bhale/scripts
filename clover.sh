@@ -1,4 +1,3 @@
-sh
 #!/bin/bash
 
 # Clean up stale directories for a fresh start
