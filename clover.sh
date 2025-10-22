@@ -43,4 +43,5 @@ echo "======== Environment setup done ========"
 # echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
+export RELEASE_CONFIG=aosp
 m Settings
