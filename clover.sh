@@ -43,5 +43,4 @@ lunch clover_devon-bp2a-eng
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
-export RELEASE_CONFIG=aosp
-mka clover
+m Settings
