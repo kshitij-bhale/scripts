@@ -10,7 +10,7 @@ rm -rf hardware/motorola
 rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 16-qpr1 --git-lfs
+repo init -u https://github.com/The-Clover-Project/manifest.git -b 16-qpr1 --git-lfs --depth=1
 echo "=================="
 echo "Repo init success"
 echo "=================="
