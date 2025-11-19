@@ -2,11 +2,12 @@
 
 # Clean old manifests
 rm -rf .repo/local_manifests
-rm -rf vendor/motorola/devon
-rm -rf vendor/motorola/rhode
-rm -rf vendor/motorola/hawao
-rm -rf vendor/motorola/sm6225-common
-rm -rf hardware/motorola
+rm -rf device/motorola/sm6225-common
+# rm -rf vendor/motorola/devon
+# rm -rf vendor/motorola/rhode
+# rm -rf vendor/motorola/hawao
+# rm -rf vendor/motorola/sm6225-common
+# rm -rf hardware/motorola
 rm -rf prebuilts/clang/host/linux-x86
 
 # # Initialize AxionAOSP source
