@@ -39,7 +39,7 @@ source build/envsetup.sh
 echo "======== Environment setup done ========"
 
 # Device + GApps variant lunch
-lunch clover_devon-bp3a-userdebug
+lunch clover_hawao-bp3a-userdebug
 echo "======== Lunch command done ========"
 
 # Start the build with full CPU usage
